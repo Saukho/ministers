@@ -1,40 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 <data>
     <variable
-        name="findParty"
-        type="com.example.tiistai25.MyName" />
+        name="Ministers"
+        type="com.example.tiistai25.MemberOfParliament" />
 </data>
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/minister"
-            android:layout_width="match_parent"
-            android:layout_height="190dp"
-            android:text="TextView" />
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searchButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.739" />
 
-        <EditText
-            android:id="@+id/find_party"
-            android:layout_width="match_parent"
-            android:layout_height="204dp"
-            android:text="TextView" />
+        <!--        <TextView-->
+<!--            android:id="@+id/select_party"-->
+<!--            android:layout_width="275dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:text="@string/select_party"-->
+<!--            android:textAlignment="center"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.422" />-->
 
         <TextView
             android:id="@+id/party"
-            android:layout_width="match_parent"
-            android:layout_height="190dp"
-            android:text="TextView" />
+            android:layout_width="277dp"
+            android:layout_height="168dp"
+            android:text="@string/party"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.417" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+        <TextView
+            android:id="@+id/minister"
+            android:layout_width="279dp"
+            android:layout_height="155dp"
+            android:text="@string/minister"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.116" />
 
-    </LinearLayout>
+        <EditText
+            android:id="@+id/parties"
+            android:layout_width="231dp"
+            android:layout_height="46dp"
+            android:text="@string/searchByParties"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.633" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

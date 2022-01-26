@@ -1,19 +1,4 @@
-
-fun main() {
-    val p = ParliamentMembersData.members
-    print("${p.size} should be 200.")
-    // try out map, filter etc. with collection p, for example:
-    // - how many MPs are there in party ps?
-    // - how many MPs in party kesk are there in constituency Uusimaa?
-    // - how many parties are in the government? (parties with at least one MP who is a minister)
-    // - what is the (approximate) average age of MPs is party kok
-    // - create a map where constituency is the key and MP the value
-    //      * print a list of constituencies and their # of MPs
-    //      * print constituencies in order of # of MPs
-}
-
-
-
+package com.example.tiistai25
 data class MemberOfParliament (
     val personNumber: Int,
     val seatNumber: Int = 0,
