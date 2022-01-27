@@ -12,28 +12,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <fragment
+            android:id="@+id/titleFragment"
+            android:name="com.example.tiistai25.TitleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
         <Button
             android:id="@+id/search_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="27dp"
+            android:layout_marginStart="48dp"
             android:layout_marginBottom="178dp"
             android:text="@string/searchButton"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/parties"
             app:layout_constraintTop_toBottomOf="@+id/parties" />
-
-        <!--        <TextView-->
-        <!--            android:id="@+id/select_party"-->
-        <!--            android:layout_width="275dp"-->
-        <!--            android:layout_height="45dp"-->
-        <!--            android:text="@string/select_party"-->
-        <!--            android:textAlignment="center"-->
-        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toTopOf="parent"-->
-        <!--            app:layout_constraintVertical_bias="0.422" />-->
 
         <TextView
             android:id="@+id/party"
@@ -42,7 +36,6 @@
             android:layout_marginStart="64dp"
             android:layout_marginEnd="64dp"
             android:layout_marginBottom="31dp"
-            android:text=""
             android:textAlignment="center"
             app:layout_constraintBottom_toTopOf="@+id/parties"
             app:layout_constraintEnd_toEndOf="parent"
@@ -66,8 +59,8 @@
 
         <EditText
             android:id="@+id/parties"
-            android:layout_width="231dp"
-            android:layout_height="0dp"
+            android:layout_width="277dp"
+            android:layout_height="56dp"
             android:layout_marginBottom="25dp"
             android:text="@string/searchByParties"
             android:textAlignment="center"
