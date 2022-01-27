@@ -7,15 +7,6 @@
         <type value="RUNNING_DEVICE_TARGET" />
         <deviceKey>
           <Key>
-            <type value="SERIAL_NUMBER" />
-            <value value="722d8aed" />
-          </Key>
-        </deviceKey>
-      </Target>
-      <Target>
-        <type value="RUNNING_DEVICE_TARGET" />
-        <deviceKey>
-          <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
             <value value="C:\Users\Saukh\.android\avd\One_Plus_API_30.avd" />
           </Key>
