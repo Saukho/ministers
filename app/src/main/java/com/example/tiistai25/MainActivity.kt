@@ -32,12 +32,12 @@ class MainActivity : AppCompatActivity() {
         val inputParty = binding.parties.editableText.toString()
         val randomMp =  p.filter{ it.party == inputParty }.random()
 
-        binding.party.text = randomMp.party
-        binding.minister.text = "Name :${randomMp.last} ${randomMp.first}"
-
+        binding.minister.text = "Random minister from chosen party: \n ${randomMp.last}\n${randomMp.first} \n  ${randomMp.party}"
 
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(view.windowToken, 0)
+
 }
+
 }
 
