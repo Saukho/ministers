@@ -1,4 +1,4 @@
-package com.example.tiistai25
+package com.example.ministers
 data class MemberOfParliament (
     val personNumber: Int,
     val seatNumber: Int = 0,

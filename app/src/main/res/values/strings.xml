@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">tiistai25</string>
+    <string name="app_name">Parliament Members App</string>
     <string name="name">Minister</string>
     <string name="FindByParties">Find By Party</string>
     <string name="party">party</string>
@@ -9,5 +9,6 @@
     <string name="fullName">Minister</string>
     <string name="minister">Minister</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Minister search application</string>
+    <string name="showParties">Show Parties</string>
 </resources>

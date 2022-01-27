@@ -1,4 +1,4 @@
-package com.example.tiistai25
+package com.example.ministers
 
 import org.junit.Test
 
