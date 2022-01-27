@@ -26,26 +26,14 @@ class MainActivity : AppCompatActivity() {
            updateUI(it)
         }
     }
-//    private fun getRandomMinisterByParty(parliament: MemberOfParliament){
-//        val inputParty = binding.parties.editableText
-//        if (inputParty.toString() == "ps"){
-//            binding.minister.text = "persut tulee"
-//        }
-//    }
+
     private fun updateUI(view: View) {
         val p = ParliamentMembersData.members
-        val id = p.map { it.seatNumber }
-        val lastName = p.map { it.last }.toSet().sorted()
-        val firstName = p.map { it.first }.toSet().sorted()
-        val party = p.map { it.party }.toSet().sorted()
         val inputParty = binding.parties.editableText.toString()
-        val mapParty =  p.map { inputParty }.toString()
-        if(mapParty == inputParty){
+        val randomMp =  p.filter{ it.party == inputParty }.random()
 
-        }
-
-        binding.party.text = mapParty
-        binding.minister.text = p.map { it.last }.toString()
+        binding.party.text = randomMp.party
+        binding.minister.text = "Name :${randomMp.last} ${randomMp.first}"
 
 
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
