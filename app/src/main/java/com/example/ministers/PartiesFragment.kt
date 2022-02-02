@@ -5,25 +5,30 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import ministers.R
-import ministers.databinding.FragmentTitleBinding
+import ministers.databinding.ActivityMainBinding
+import ministers.databinding.FragmentMinistersBinding
+import ministers.databinding.FragmentPartiesBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [PartiesFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class PartiesFragment : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        val binding = DataBindingUtil.inflate<FragmentTitleBinding>(inflater,
-            R.layout.fragment_title,container,false)
+    private lateinit var binding: FragmentPartiesBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val binding = DataBindingUtil.inflate<FragmentPartiesBinding>(
+            inflater, R.layout.fragment_parties, container, false)
+
+        binding.parties = this
+
+        binding.showPartiesButton.setOnClickListener @Suppress("UNUSED_ANONYMOUS_PARAMETER") {
+                view:View -> view.findNavController().navigate(R.id.action_partiesFragment_to_ministersFragment2) }
         return binding.root
     }
 }

@@ -9,7 +9,6 @@ class App : Application() {
         super.onCreate()
         Timber.plant(Timber.DebugTree())
 
-
     }
 
 }

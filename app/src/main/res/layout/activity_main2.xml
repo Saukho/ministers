@@ -14,7 +14,7 @@
 
         <fragment
             android:id="@+id/titleFragment"
-            android:name="com.example.ministers.TitleFragment"
+            android:name="com.example.ministers.PartiesFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             />
