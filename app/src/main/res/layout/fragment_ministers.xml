@@ -4,15 +4,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.ministers.MinistersFragment">
 
+        <data>
+
+                <variable
+                    name="ministersFragment"
+                    type="com.example.ministers.MinistersFragment" />
+        </data>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/frameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
                 <Button
                     android:id="@+id/showMinister"
-                    android:layout_width="272dp"
-                    android:layout_height="60dp"
+                    android:layout_width="343dp"
+                    android:layout_height="59dp"
                     android:text="Minister details"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -20,36 +25,34 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.879" />
-
                 <EditText
                     android:id="@+id/search_party"
                     android:layout_width="349dp"
                     android:layout_height="60dp"
                     app:layout_constraintBottom_toTopOf="@+id/showMinister"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.523"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.943" />
+                    app:layout_constraintVertical_bias="0.843" />
                 <TextView
                     android:id="@+id/party_list"
-                    android:layout_width="276dp"
-                    android:layout_height="73dp"
-                    android:text="TextView"
-                    app:layout_constraintBottom_toTopOf="@+id/search_party"
+                    android:layout_width="333dp"
+                    android:layout_height="127dp"
+                    app:layout_constraintBottom_toTopOf="@+id/showRand"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.472"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.646" />
+                    app:layout_constraintVertical_bias="0.223" />
                 <TextView
                     android:id="@+id/showRand"
-                    android:layout_width="281dp"
-                    android:layout_height="82dp"
+                    android:layout_width="346dp"
+                    android:layout_height="60dp"
                     app:layout_constraintBottom_toTopOf="@+id/search_party"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/party_list"
-                    app:layout_constraintVertical_bias="0.591" />
+                    app:layout_constraintVertical_bias="0.336" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 </layout>

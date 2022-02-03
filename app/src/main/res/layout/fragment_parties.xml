@@ -16,25 +16,28 @@
 
         <TextView
             android:id="@+id/introText"
-            android:layout_width="266dp"
-            android:layout_height="111dp"
+            android:layout_width="406dp"
+            android:layout_height="123dp"
             android:text="@string/finnish_parliament"
+            android:textAlignment="center"
+            android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/showPartiesButton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.658"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.03" />
 
         <Button
             android:id="@+id/showPartiesButton"
-            android:layout_width="309dp"
-            android:layout_height="87dp"
+            android:layout_width="304dp"
+            android:layout_height="61dp"
             android:text="@string/showParties"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.785" />
+            app:layout_constraintVertical_bias="0.948" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
