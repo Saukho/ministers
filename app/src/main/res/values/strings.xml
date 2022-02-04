@@ -11,7 +11,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Minister search application</string>
     <string name="showParties">See party list</string>
-    <string name="finnish_parliament_app_find_your_minister">Finnish Parliament app --- Find Your minister</string>
+    <string name="finnish_parliament_app_find_your_minister">Finnish Parliament app</string>
     <string name="with_this_app_you_can_search_finnish_parliament_parties_and_ministers">With this app you can search finnish parliament parties and ministers</string>
     <string name="finnish_parliament">With this app you can search finnish parliament data</string>
 </resources>

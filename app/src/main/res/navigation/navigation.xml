@@ -10,18 +10,10 @@
         android:label="fragment_parties"
         tools:layout="@layout/fragment_parties" >
         <action
-            android:id="@+id/action_partiesFragment_to_ministersFragment2"
-            app:destination="@id/ministersFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
-        <action
             android:id="@+id/action_partiesFragment_to_ministersFragment"
             app:destination="@id/ministersFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
-            app:popUpTo="@id/ministersFragment"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
@@ -30,15 +22,18 @@
         android:name="com.example.ministers.MinistersFragment"
         android:label="fragment_ministers"
         tools:layout="@layout/fragment_ministers" >
+        <argument
+            android:name="randomMinister"
+            app:argType="string" />
+        <argument
+            android:name="randomId"
+            app:argType="integer" />
         <action
-            android:id="@+id/action_ministersFragment_to_ministerDetailsFragment2"
-            app:destination="@id/ministerDetailsFragment" />
-        <action
-            android:id="@+id/action_ministersFragment_to_ministerDetailsFragment3"
+            android:id="@+id/action_ministerFragment_to_ministerDetailsFragment"
             app:destination="@id/ministerDetailsFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@animator/nav_default_enter_anim"
             app:popUpTo="@id/ministerDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
@@ -46,9 +41,12 @@
         android:id="@+id/ministerDetailsFragment"
         android:name="com.example.ministers.MinisterDetailsFragment"
         android:label="fragment_minister_details"
-        tools:layout="@layout/fragment_minister_details" >
-        <action
-            android:id="@+id/action_ministerDetailsFragment_to_partiesFragment2"
-            app:destination="@id/partiesFragment" />
+        tools:layout="@layout/fragment_minister_details">
+        <argument
+            android:name="randomId"
+            app:argType="integer" />
+        <argument
+            android:name="randomMinister"
+            app:argType="string" />
     </fragment>
 </navigation>

@@ -25,10 +25,10 @@ class PartiesFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentPartiesBinding>(
             inflater, R.layout.fragment_parties, container, false)
 
-        binding.parties = this
+       // binding.parties = this
 
         binding.showPartiesButton.setOnClickListener @Suppress("UNUSED_ANONYMOUS_PARAMETER") {
-                view:View -> view.findNavController().navigate(R.id.action_partiesFragment_to_ministersFragment2) }
+                view:View -> view.findNavController().navigate(R.id.action_partiesFragment_to_ministersFragment) }
         return binding.root
     }
 }
