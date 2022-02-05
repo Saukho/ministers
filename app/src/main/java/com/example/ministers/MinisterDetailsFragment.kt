@@ -17,7 +17,7 @@ class MinisterDetailsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val args = MinisterDetailsFragmentArgs.fromBundle(requireArguments())
-        println("args ministerdetailsfragement $args ${args.randomId}")
+//        println("args ministerdetailsfragement $args ${args.randomId}")
         val binding = DataBindingUtil.inflate<FragmentMinisterDetailsBinding>(
             inflater, R.layout.fragment_minister_details, container, false
         )
