@@ -22,12 +22,12 @@
         android:name="com.example.ministers.MinistersFragment"
         android:label="fragment_ministers"
         tools:layout="@layout/fragment_ministers" >
-        <argument
-            android:name="randomMinister"
-            app:argType="string" />
-        <argument
-            android:name="randomId"
-            app:argType="integer" />
+<!--        <argument-->
+<!--            android:name="randomMinister"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="randomId"-->
+<!--            app:argType="integer" />-->
         <action
             android:id="@+id/action_ministerFragment_to_ministerDetailsFragment"
             app:destination="@id/ministerDetailsFragment"

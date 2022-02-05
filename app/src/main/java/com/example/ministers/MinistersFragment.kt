@@ -57,7 +57,7 @@ class MinistersFragment : Fragment() {
         }
 
         binding.showRand.setOnClickListener @Suppress("UNUSED_ANONYMOUS_PARAMETER") {
-                view:View -> view.findNavController().navigate(R.id.action_ministerFragment_to_ministerDetailsFragment)
+//                view:View -> view.findNavController().navigate(R.id.action_ministerFragment_to_ministerDetailsFragment)
             val action = MinistersFragmentDirections.actionMinisterFragmentToMinisterDetailsFragment(
             randomId,randomMinister
             )
