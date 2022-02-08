@@ -31,7 +31,6 @@
         <action
             android:id="@+id/action_ministerFragment_to_ministerDetailsFragment"
             app:destination="@id/ministerDetailsFragment"
-            app:popUpTo="@id/ministerDetailsFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
@@ -43,10 +42,7 @@
         android:label="fragment_minister_details"
         tools:layout="@layout/fragment_minister_details">
         <argument
-            android:name="randomId"
-            app:argType="integer" />
-        <argument
-            android:name="randomMinister"
+            android:name="selectedParty"
             app:argType="string" />
     </fragment>
 </navigation>
